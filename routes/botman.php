@@ -3,7 +3,7 @@ use App\Http\Controllers\BotManController;
 
 $botman = resolve('botman');
 
-$botman->hears('Hi|Bwala', function ($bot) {
-    $bot->reply('Hello!');
+$botman->hears('{keyword}', function ($bot,$keyword) {
+    $bot->reply('Hello! You write: '.$keyword);
 });
 $botman->hears('Start conversation', BotManController::class.'@startConversation');
