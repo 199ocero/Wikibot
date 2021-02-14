@@ -1,12 +1,4 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
-/.idea
-/.vagrant
-/.discovery
-Homestead.json
-Homestead.yaml
-npm-debug.log
-.env
+node_modules/
+token
+.DS_Store
+.idea
